@@ -1,0 +1,1160 @@
+# HTML
+
+Chapter 1
+
+```html
+<h2>Write the date</h2>
+<p>Write your wish</p>
+```
+
+- Elements
+    
+    consists of an opening tag, contents and a closing tag
+    
+    e.g. <p>Hello World!</p>
+    
+    `<p>`  **= paragraph element** 
+    
+    `<body>` **= body element**
+    
+- Indentation
+    
+    (2 spaces for indent = 1 tab)
+    
+    **indentation isn’t required** however its good practice c:
+    
+    e.g.
+    
+    ```html
+    <body>
+      <p>👋 I'm a new web developer!</p> <!-- indent here -->
+    </body>
+    ```
+    
+    - coding question
+        
+        ```html
+        <!-- Write code below 💖 -->
+        <body>
+          <p> Fire </p>
+          <p> Water </p>
+          <p> Earth </p>
+          <p> Air </p>
+        </body>
+        
+        ```
+        
+    
+- Headings
+    
+    example
+    
+    ```html
+    <body>
+      <h1>Breaking News 🚨</h1>
+      <p>Florida man once evaded arrest by cartwheeling now running for mayor.</p>
+    </body>
+    ```
+    
+    There are six levels of headings:
+    
+    ```html
+    <h1>Heading level 1</h1> <!-- 1 being the biggest -->
+    <h2>Heading level 2</h2>
+    <h3>Heading level 3</h3>
+    <h4>Heading level 4</h4>
+    <h5>Heading level 5</h5>
+    <h6>Heading level 6</h6> <!-- 6 being the smallest -->
+    ```
+    
+- Line Break
+    
+    instead of creating a seperate <p> tag to start a new line.. you can use the tag <br> to break the line and start it on a new line
+    
+    <br> is also a self closing tag , therefore it doesn’t need a closing tag to close
+    
+    example:
+    
+    ```html
+    <body>
+      <h1>Breaking News</h1>
+      <p>Florida man robs convenience store with an alligator.<br>Leaves a baby Crocs behind.</p>
+    </body>
+    
+    <!-- output --> 
+    <!-- Breaking News --> 
+    <!-- Florida man robs convenience store with an alligator. --> 
+    <!-- Leaves a baby Crocs behind. --> 
+    
+    ```
+    
+    - example code using h1, h2 and line break
+        
+        ```html
+        <!-- Write code below 💖 -->
+        <!-- Write code below 💖 -->
+        <body>
+          <h1> Venezuelan Inflation Falls </h1>
+          <h2> Jan 1 2005 </h2>
+          <p>Inflation dropped to 19.2 percent this year, from 27.1 percent in 2003 <br> Consumer prices rose 1.6 percent in December after an increase of 1.7 percent in November. </p>
+        </body>
+        ```
+        
+- Text formatting
+    - **`<b>` element to bold text.**
+    - **`<i>` element to *italicize* text.**
+    - **`<u>` element to underline text.**
+    - **`<s>` element to ~~strikethrough~~ text.**
+    
+    example code
+    
+    ```html
+    <p>This is the reminder that the <i>final exam</i> is <b>mandatory</b>.<br>
+    It will be held on <u>Monday, October 14th</u> at <s>7PM</s> 8PM EST.</p>
+    ```
+    
+    - coding question using them all
+        
+        ```html
+        **<!-- Write code below 💖 -->
+        <body>
+        <p> <b>Cutting Down, Ramping Up:</b> We have a robust <br> 
+        strategy for <s> low hanging fruits </s> mission-critical <br>
+        objectives that move the needle at all costs. It's <br>
+        time to double down on <b> revenue growth </b> while <br>
+        <u> cutting costs</u>. This is a win-win initiative, a win for <br>
+        us and our amazing shareholders!<br>
+        
+        P.S. After several strong sales months, we are <br>
+        printing <b> Employee Appreciation Tees </b>! Will go on <br>
+        sale Monday.
+        </body>**
+        
+        ```
+        
+- Lists
+    
+    organizes 
+    
+    2 types of html lists:
+    
+    - **`<ul>` Unordered lists**
+    - how to
+        
+        ```html
+        <ul> 
+          <li>🧺 Go to laundromat.</li>
+          <li>🖥 Code for 45 min.</li>
+          <li>💅 Take a bubble bath.</li>
+        </ul>
+        ```
+        
+    - **`<ol>` Ordered lists (numbered list)**
+    - how to
+        
+        ```html
+        <ol>
+          <li>🧺 Go to laundromat.</li>
+          <li>🖥 Code for 45 min.</li>
+          <li>💅 Take a bubble bath.</li>
+        </ol>
+        ```
+        
+    - coding question using them both
+        
+        ```html
+        <!-- Write code below 💖 -->
+        <body>
+        <h1> Ingredients </h1>
+        <ul>
+          <li>milk</li>
+          <li>eggs</li>
+          <li>cake mix</li>
+        </ul>
+        
+        <h2> Instructions </h2>
+        <ol>
+          <li>first add milk to a bowl</li>
+          <li>then add 2 eggs and mix thoroughly</li>
+          <li>add in cake mix gradually</li>
+        </ol>
+        </body>
+        ```
+        
+- Links
+    
+    How users connect to other sites and browse the web
+    
+    to add a link, html uses  ****`<a>` **an anchor element!** 
+    
+    **This link tag allows us to add a [hyperlink](https://en.wikipedia.org/wiki/Hyperlink) to a piece of text.**
+    
+    further explanation of difference between a and href:
+    
+    | HTML Part | What it Does |
+    | --- | --- |
+    | `<a>` | Says: “Hey browser, I’m making a link here.” |
+    | `href="..."` | Says: “This is where the link should go when clicked.” |
+    | Link text (between `<a>` and `</a>`) | This is what the user sees and clicks. |
+    
+    **`src` = for “source”**
+    
+    - examples:
+        
+        href when linking.. - websites, email, sms, phone number
+        
+        src when linking.. - images
+        
+        ```html
+        <a href="https://archive.org/web">Internet Archive</a> 
+        <!-- links to website -->
+        <!-- the use of "href" adds the link to the text -->
+        ```
+        
+        ```html
+        <a href="mailto:frankie@gmail.com">📧</a>
+        <a href="tel:212-555-2368">🤙</a>
+        <a href="sms:320-250-HTML">💬</a>
+        
+        <!-- links to email, phone and messages -->
+        ```
+        
+        ```html
+        <p>Here's a cute pic:</p>
+        <img src="https://i.redd.it/5unn16axx1v81.jpg">
+        
+        <!-- instead of 'a' it's 'img' -->
+        <!-- links to an image -->
+        ```
+        
+    - coding question
+        
+        ```html
+        <!-- Write code below 💖 -->
+        <body>
+        <h1> Missing Pet Alert! <br> Pet Name: Aurora </h1>
+        <img src= "https://www.munchkincatguide.com/wp-content/uploads/2018/12/munchkincatslider2.jpg">This is how she looks</img>
+        <p> She is light brown, has short paws and is very fluffy! </p>
+        <p> Contact Information: </p>
+        <a href= "tel:8367876">call us now if you find her!</a>
+        <a href= "mailto:missingaurora@yahoo.com">or email us!</a>
+        </body>
+        ```
+        
+- coding question: creating website for band
+    
+    ```html
+    <!-- Write code below 💖 -->
+    <body>
+      <h1> <b> Suicideboys </b> </h1>
+        <h3>Artists Names: Ruby da Cherry and Scrim</h3>
+          <img src="https://i.pinimg.com/736x/b4/fa/d2/b4fad27e2d3ce99992609d1b2c7f0a7c.jpg"></img>
+    <p> <s>Blurb:</s> <br> American hip hop duo</p>
+    <a href="https://suicideboystore.com/?srsltid=AfmBOorG1w2NCgcSwWBenSxVL7HZc8C9SUorbNO6NeqgtMiKczlHL7KF">MERCH</a>
+    <ul> 
+    <li> </li> Ruby da Cherry
+    <li> </li> Scrim
+    </ul>
+    <p> TOP SONGS: </p>
+    <ol>
+    <li>avalon </li>
+    <li> 1000 blunts</li>
+    <li> new chains same shackles</li>
+    <li>thorns </li>
+    <li> ugliest</li>
+    </ol>
+    
+    </body>
+    
+    ```
+    
+
+---
+
+Chapter 2
+
+- HTML structure
+    
+     ****`<!DOCTYPE html>` **- it declares that the document is html (instruction to the user to use html)**
+    
+    ALL html files must start with `<!DOCTYPE html>` and <html> elements
+    
+    example: 
+    
+    ```html
+    <!DOCTYPE html> <!-- doesnt need a closing tag -->
+    <html> <!-- needs a closing tag as it should contain <head> and <body> -->
+      Code goes here
+    </html>
+    ```
+    
+    example 2:
+    
+    ```html
+    <!DOCTYPE html>
+    <html>
+      <head>
+        Some code goes here
+      </head>
+      <body>
+        A lot more goes here
+      </body>
+    </html>
+    ```
+    
+    the <title> element is featured in the <head>
+    
+    ```html
+    <!DOCTYPE html>
+    <html>
+      <head>
+        <title>Codédex | Start your coding adventure ⋆˙⟡</title> 
+        <!-- this assigns the title to the tab -->
+      </head>
+      <body>
+        Code goes here <!-- all the main code is featured here -->
+      </body>
+    </html> 
+    ```
+    
+    ![image.png](image.png)
+    
+    - coding question
+        
+        ```html
+        <!-- Write code below 💖 -->
+        <!DOCTYPE html>
+        <html>
+        <head>
+        <title> Coding with Java </title>
+        </head>
+        <body>
+        <p> this is how you code! </p>
+        <p> bla bla bla bla </p>
+        </body>
+        </html>
+        ```
+        
+- Family Tree
+    
+    elements in a html file are much arranged like a family tree
+    
+    - **Parent and child elements**
+        
+        ```html
+        <!DOCTYPE html>
+        <html>
+          <head> <!-- child of html -->
+            <title>My Website</title> <!-- child of head -->
+          </head>
+          <body> <!-- child of html -->
+            <p>Well, <i><!-- child of p -->howdy</i> there!</p>
+          </body>
+        </html>
+        ```
+        
+    - Sibling elements
+        
+        ```html
+        <body>
+          <ul>
+            <li>🍄 Mario</li> <!--sibling elements as their both children to <ul>-->
+        		<li>🐢 Luigi</li> <!--sibling elements as their both children to <ul>-->
+          </ul>
+        </body>
+        ```
+        
+    - coding question
+        
+        ```html
+        <!-- Write code below 💖 -->
+        <!DOCTYPE html>
+        <html>
+          <body>
+            <head>
+              <title> My Family Tree </title>
+            </head>
+              <h1> My Family Tree </h1>
+        <p> Parents: </p> <ul>
+        <li> Ron </li>
+        <li> Jon </li>
+        <li> Bon </li>
+        </ul>
+        
+        <p> Children from oldest to youngest: </p> <ol>
+        <li> Natt </li>
+        <li> Bruce </li>
+        <li> Layla </li>
+        </ol>
+          </body>
+        </html>
+        ```
+        
+- Comments
+    
+    comments should be used sparingly and removed when no longer needed 
+    
+    ```html
+    <!-- -->
+    ```
+    
+    Types of Comments
+    
+    - Inline
+        
+        ```html
+         <p>This text is visible. <!-- But this is not. --></p>
+        ```
+        
+    - Multi-line
+        
+        ```html
+        <!--
+          This is also a comment.
+          HI
+          YAAA
+        -->
+        ```
+        
+- Attributes
+    
+    they provide **additional information** about the elements in a line of code
+    
+    they’re usually **name/value** pairs (`name="value"`)
+    
+    exmaple:  ****
+    
+    ```html
+    <img src="dog.jpg">
+    <!-- src is the name of the attribute
+    
+    "dog.jpg" is the value-->
+    ```
+    
+    - coding example (generally explains attributes)
+        
+        ```html
+        <!-- for example this ordered list automatically 
+        becomes ordered by numbers -->
+        
+        <ol>
+          <li>Power ⚡</li>
+          <li>Courage 🔥</li>
+          <li>Wisdom 🦉</li>
+        </ol>
+        
+        <!-- we can change that with attributes -->
+        
+        <ol type="a"> <!-- now the list will be ordered in 
+        alphabetical order starting with "a"  -->
+          <li>Power ⚡</li>
+          <li>Courage 🔥</li>
+          <li>Wisdom 🦉</li>
+        </ol>
+        
+        ```
+        
+    - coding exampe (attributes in image tag)
+        
+        ```html
+         <img src="https://i.imgur.com/TrXO7Sa.png" width="250">
+        
+        <!-- "src" and "width="250" are an examples 
+        of attributes -->
+        
+        <img alt="pixel girl using a laptop" src 
+        ="https://www.codedex.io/images/tier1.png">
+        
+        <!-- 2 attributes featured src and alt -->
+        <!-- "alt" is an attribute -->
+        <!-- if the image can't be shown, the alt text is shown instead -->
+        ```
+        
+    - coding example (attribute in anchor tag)
+        
+        ```html
+        <a href="https://www.codedex.io/">Codédex</a>
+        <!-- "href" is an attribute, where the link goes -->
+        
+        <a href="https://www.codedex.io/" target="_blank">Codédex</a>
+        
+        <!-- this target="_blank" attribute can be added  to make 
+        the link open in a new browser tab-->
+        ```
+        
+    - coding question using alt text and new tab link
+        
+        ```html
+        <!DOCTYPEhtml>
+        <html>
+        <head>
+        <title> Wiki Article of Albert Einstein </title>
+        </head>
+        <body>
+        <h1> The Hero: Albert Einstein </h1>
+        <img alt = "This picture features his goofy side" src= "https://hips.hearstapps.com/hmg-prod/images/albert-einstein-sticks-out-his-tongue-when-asked-by-news-photo-1681316749.jpg">
+        <p> He was a theoretical physicist. He was well known for developing the theory of relativity.</p>
+        <a href = "https://en.wikipedia.org/wiki/Albert_Einstein" target "_blank"> Wiki on Albert </a>
+        
+        </body>
+        </html>
+        ```
+        
+    - Attributes 2
+        
+        classes and ids , any element can use these attributes
+        
+        - ids
+            
+            identifies an element
+            
+            can be used to link another part of the same page (e.g. the heading)
+            
+            example:
+            
+            ```html
+            <a href="#medellin">Link to Medellín</a>
+            
+            <h2 class="city" id="medellin">Medellín 🇨🇴</h2>
+            ```
+            
+            when referencing a section to go to, like a url a hashtag is used
+            
+            ```html
+            <a href="#section1">Go to Section 1</a>
+            <!-- this shows that if the person clicks this, they'll 
+            be brought to section 1 -->
+            
+            ```
+            
+            however, a hashtag is not used when assigning an id to an element
+            
+            ```html
+            <div id="section1">...</div> <!-- No # here -->
+            
+            ```
+            
+        - classes
+            
+            grouping elements under a common theme
+            
+            - non coding example
+                
+                
+                | Element | Class |  |
+                | --- | --- | --- |
+                | Geometry | Math |  |
+                | Algebra | Math |  |
+        - Differences
+            
+            An **element** can be assigned to **multiple class values**
+            
+            (In other words…Multiple Classes can have the same element)
+            
+            ```html
+            <p class="first-value second-value third-value">Hello, World</p>
+            ```
+            
+            HOWEVER
+            
+            An element can only have one id value
+            
+            (In other words, An id can only be given to one element)
+            
+            ```html
+            <p id="value">Hello, World</p>
+            ```
+            
+        
+        ALWAYS **LOWERCASE**
+        
+        if the names of the attributes have multiple words, they should be separated with “-”
+        
+        - Division Element
+            
+            When creating sections in html we use the element <div> (short for division)
+            
+            groups elements
+            
+            - example in coding:
+                
+                ```html
+                <div class="page-section" id="about-me"> <!-- it is combined with 
+                                                         the class and id attributes -->
+                  <h2>About Me</h2>
+                  <p>Ness is an aspiring web developer!</p>
+                </div>
+                
+                <div class="page-section" id="social-media">
+                  <h2>Social:</h2>
+                  <ul>
+                    <li>GitHub</li>
+                    <li>Twitter</li>
+                    <li>LinkedIn</li>
+                  </ul>
+                </div>
+                ```
+                
+            - Coding Question
+                
+                ```html
+                <!-- Lorem Ipsum 🖋️ -->
+                <!-- Codédex -->
+                
+                <!DOCTYPE html>
+                <html>
+                <head>
+                  <title>Draft Title</title>
+                </head>
+                <body>
+                  <h1>Untitled</h1>
+                  
+                  <a href="#heading-1">Heading 1</a>
+                  <a href="#heading-2">Heading 2</a>
+                
+                  <div class="section">
+                    <h2 class="heading" id="heading-1">Heading 1</h2>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                    </p>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                    </p>
+                  </div>
+                
+                  <div class="section">
+                    <h2 class="heading" id="heading-2">Heading 2</h2>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                    </p>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                    </p>
+                  </div>
+                
+                </body>
+                </html>
+                ```
+                
+    - Style Attribute
+        
+        we can create a style to our html code to make our text look more fun!
+        
+        - code example:
+            
+            ```html
+            <p>
+              Roses are <span style="color:red;">red</span>.<br />
+              Violets are <span style="color:blue;">blue</span>.
+            </p>                  <!--property "color" and a value "red"
+                                        separated by colon-->
+                                        
+            <!-- when listing multiple styles, they have to be separated 
+            with a semicolon -->
+            
+            <p>
+              Roses are <span style="color:red; text-decoration:underline;">red</span>.<br />
+              Violets are <span style="color:blue; text-decoration:underline;">blue</span>.
+            </p>
+            
+            ```
+            
+        - styling the <body>:
+            
+            ```html
+            <!DOCTYPE html>
+            <html>
+              <head>
+                <style>
+                  ... Styles for elements go here
+                </style>
+              </head>
+              <body>
+                ... Elements go here
+              </body>
+            </html>
+            ```
+            
+        - styling certain elements:
+            
+            ```html
+            <style>
+              element {
+                property: value;
+              }
+            </style>
+            ```
+            
+        - everything put together:
+            
+            ```html
+            <!DOCTYPE html>
+            <html>
+              <head>
+                <style>
+                  span {
+                    text-decoration: underline;
+                  }         <--! in a style element, you can use a . (class) or 
+                                    hashtag to select elements-->
+            
+                  #red-word {
+                    color: red;
+                  }
+            
+                  #blue-word {
+                    color: blue;
+                  }
+                </style>
+              </head>
+              <body>
+                <p>
+                  Roses are <span id="red-word">red</span>.<br />
+                  Violets are <span id="blue-word">blue</span>.<br />
+                </p>
+              </body>
+            </html>
+            ```
+            
+- Forms
+    
+    collects user input data
+    
+    how they work:
+    
+    1. **The user enters some information.**
+    2. **The user presses a “Submit” button.**
+    3. **And something happens!**
+    - 2 attributes are commonly used in form
+        1. Action = where the form of the data goes after submitted
+        2. method = how the form data is processed 
+- Inputs
+    
+    <input> used as a control for measuring data 
+    
+    <type> kind of input
+    
+    ```html
+    <form>
+      <input type="text"> <!-- renders plain text -->
+    ```
+    
+    </form>
+    
+    <submit> turns to the <input> into a button for submitting the form data
+    
+    ```html
+    <form>
+      <input type="submit">
+    </form>
+    ```
+    
+- Input Validation
+    
+    how do we make sure that the input a user types i valid to our code?
+    
+    we can use code like
+    
+    ```html
+    <input = "password" minlength= "5" maxlegth= "10">
+    
+    <!-- This will make sure the user types a password
+    thats minimum length 5 letters and max 10.. if not.. 
+    the password isnt valid-->
+    ```
+    
+- 17) Required Data
+    
+    data which needs to be submitted 
+    
+    ```html
+    <form method="dialog">
+      Name: <input type="text" required> <!-- only required -->
+      <br><br>
+      Favorite Color: <input type="text">
+      <input type="submit">
+    </form>
+    ```
+    
+- Inputting Numbers
+    
+    ```html
+    <input type= "number">
+    ```
+    
+    arrows appear automatically in this code
+    
+    for the arrows to skip to steps : e.g. (-2,0,2,4,6)
+    
+    ```html
+    <input type= "number" step= "2">
+    ```
+    
+    if you want the minimum number to be 5 and the max 10 you can set your code up like this:
+    
+    ```html
+    <input type= "number" minimum= "5" maximum= "10">
+    ```
+    
+- Inputting Checkboxes
+    
+    ```html
+    <input type = "checkbox"> Action
+    ```
+    
+- Inputting Radio and giving names
+    
+    ```html
+    <input type = "radio"> Thank
+    <input type = "radio"> Goodness!
+    
+    ```
+    
+- How to make the user choose only one input
+    
+    ```html
+    before:
+    <input type = "radio"> Thank
+    <input type = "radio"> Goodness!
+    
+    after:
+    <input type = "radio" name= "option"> Thank
+    <input type = "radio" name= "option"> Goodness!
+    ```
+    
+- 19 Text areas
+    
+    another text input in forms are “text areas”
+    
+    ```html
+    <textarea id="data-entry" rows="7" cols="42"  placeholder="Enter some data here!">
+    </textarea>
+    
+    ```
+    
+    as the elements <class> and <id> use <rows>, <cols> (columns) and <placeholder>  so does <textarea>
+    
+- Form Labels
+    
+    labels can be used in forms
+    
+    - e.g.
+        
+        ```html
+        <form>
+          <label>Book Title: </label><input type="text">
+          <br><br>
+          <label>Author: </label><input type="text">
+          <br><br>
+          <input type="submit">
+        </form>
+        ```
+        
+    
+    how to associate label to different to different elements on a form
+    
+    ```html
+    <form>
+      <label for="title">Book Title: </label><input type="text" id="title">
+      <br><br>
+      <label for="author" >Author: </label><input type="text" id="author">
+      <br><br>
+      <input type="submit">
+    </form>
+    ```
+    
+    ```html
+    <form>
+      <label>Book Title: <input type="text"></label>
+      <label>Author: <input type="text"></label>
+    </form>
+    ```
+    
+- coding question using text areas and form labels
+    
+    ```html
+    <!DOCTYPE html>
+    <html>
+      <head>
+        <title>Contact Us</title>
+      </head>
+      <body>
+        <form>
+      <h2>Contact Us</h2>
+      <label> Name: </label> <input type= "text">
+      <br><br>
+      <label> Comments and suggestions: </label> 
+      <br>
+      <textarea id= rows= "40" cols= "30" placeholder= "enter here"></textarea>
+      <br><br>
+      <input type= "submit">
+    </form>
+      </body>
+    </html>
+    ```
+    
+- What version of html do we use today
+    
+    HTML5
+    
+- Semantic elements
+    
+    semantic is more meaningful than using other elements like “div” or “span” to structure code
+    
+    they improve the understanding of code between human readers and machines
+    
+    enhance SEO (search engine optimization?
+    
+    - difference between non semantic code and semantic code
+        
+        non semantic code
+        
+        ```html
+        <div>
+          <div>My Blog Title</div>
+          <div>Some blog content here...</div>
+        </div>
+        
+        ```
+        
+        semantic code
+        
+        ```html
+        <article>
+          <header>My Blog Title</header>
+          <p>Some blog content here...</p>
+        </article>
+        
+        ```
+        
+    - common semantic elements
+        
+        
+        | Element | Purpose |
+        | --- | --- |
+        | `<header>` | Defines the **introductory content** or navigation of a page/section |
+        | `<nav>` | Contains **navigation links** |
+        | `<main>` | Contains the **main content** of the page (only one per page) |
+        | `<section>` | Groups related content into a **section** with a heading |
+        | `<article>` | Represents **independent, self-contained content**, like blog posts |
+        | `<aside>` | Contains **sidebar content** or content tangentially related |
+        | `<footer>` | Contains the **footer** of a page or section (contact, copyright, etc.) |
+        | `<figure>` | Used to group **media** (images, charts) with a caption |
+        | `<figcaption>` | The **caption** for the `<figure>` element |
+        | `<mark>` | Highlights text as **important or relevant** |
+        | `<time>` | Represents a **time or date** |
+    
+
+---
+
+Chapter 3 semantic element
+
+- Header (not head) <header>
+    
+    <header> </header>
+    
+    - example
+        
+        ```html
+        <body>
+          <header> <!-- in the body -->
+            <h1>Welcome to My Site!</h1> <!-- uses heading elements 
+            h1 to h6 -->
+          </header>
+        </body>
+        ```
+        
+    
+    the header includes information like:
+    
+    - the website logo
+    - title of the site
+    - search bar
+    - other links to other areas of the site
+    - sign in button
+- Navigation <nav>
+    
+    To go to other links/pages on the header, you need to use navigation
+    
+    <nav> which goes inside the header
+    
+    - example
+        
+        ```html
+        <header>
+          <nav>
+            <!-- Links go here -->
+          </nav> <!-- can contain ordered and unordered lists -->
+        </header>
+        ```
+        
+- coding question #1 (header, nav)
+    
+    ```html
+    <!DOCTYPE html>
+    <html>
+      <head>
+        <title>Blogging with Jaycee</title>
+      </head>
+      <body>
+        <header>
+          <h1> Welcome to my blog "Blogging with Jaycee"... </h1>
+        <nav>
+          <ul>
+            <li> <a href= "#about-section"> About </a> </li>
+            <li> <a href="#story-section"> Stories </a> </li>
+          </ul>
+        </nav>
+        </header>
+      </body>
+    </html>
+    
+    ```
+    
+- main and footer <main>
+    
+    <main> - main topics and ideas shown on page 
+    
+    - coding example
+        
+        ```html
+        <body>
+          <main>
+            <!-- Main information goes here -->
+          </main>
+        </body>
+        ```
+        
+    
+    <footer> - goes beneath the main content of the page.. it includes.. the name of the company, copyright info and additional links to other sections of the website or other websites.
+    
+    - coding example
+        
+        ```html
+        <footer>
+          <!-- Footer content goes here -->
+        </footer>
+        ```
+        
+- coding question #2 (header, nav, main and footer)
+    
+    ```html
+    <!-- Write code below 💖 -->
+    <!DOCTYPE html>
+    <html>
+      <head>
+        <title>Blogging with Jaycee</title>
+      </head>
+      <body>
+        <header>
+          <h1> Welcome to my blog "Blogging with Jaycee"... </h1>
+        <nav>
+          <ul>
+            <li> <a href= "#about-section"> About </a> </li>
+            <li> <a href="#story-section"> Stories </a> </li>
+          </ul>
+        </nav>
+        </header>
+        <main> 
+        <h2> HTML BLOG </h2>
+        </main>
+        <footer> 
+          <ul>
+            <li> <a href= "#archive"> Archives </li>
+            <li> <a href= "#legal"> Legal </li>
+          </ul>
+    
+        </footer>
+      </body>
+    </html>
+    
+    ```
+    
+- page sections <section>
+    
+    groups related content together 
+    
+    within the page, there are smaller parts which are called sections 
+    
+    <section>
+    
+    - coding example
+        
+        ```html
+        <main>
+          <section>
+            <h2>Section A</h2>
+          </section>
+          <section>
+            <h2>Section B</h2>
+          </section>
+          <section>
+            <h2>Section C</h2>
+          </section>
+        </main>
+        ```
+        
+- single articles <article>
+    
+    singular pieces of content 
+    
+    - coding example
+        
+        ```html
+        <section>
+          <h2>Section Heading</h2>
+          <article>
+            <h3>Article Heading</h3>
+            Piece of content
+          </article>
+        </section>
+        ```
+        
+- figures <figure>
+    
+    a figure is usually a graphic, image or diagram.
+    
+    - coding example
+        
+        ```html
+        <figure>
+          <!-- Figure content goes here -->
+        </figure>
+        ```
+        
+    - captioning figures
+        
+        using <figcaption> to describe what’s in <figure>
+        
+        - example
+            
+            ```html
+            <figure>
+              <img
+                width="500"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Tsunami_by_hokusai_19th_century.jpg/1024px-Tsunami_by_hokusai_19th_century.jpg"
+                alt="Great Wave off Kanagawa by Hokusai"
+              />
+              <figcaption>The Great Wave Off Kanagawa by Hokusai</figcaption>
+            </figure>
+            ```
+            
+    
+- summary of all the elements we’ve learnt
+    
+    ```html
+    <body>
+      <header>
+        <nav></nav>
+      </header>
+      <main>
+        <section>
+          <article>
+            <figure>
+              <figcaption></figcaption>
+            </figure>
+          </article>
+        </section>
+      </main>
+      <footer></footer>
+    </body>
+    ```
