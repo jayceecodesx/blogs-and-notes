@@ -1,1 +1,746 @@
+# Java
 
+main method - 
+
+```java
+public class Main {
+public static void main(String[]args){
+	}
+}
+```
+
+different lines
+
+```java
+package main;
+
+public class Main {
+
+	public static void main(String[] args) {
+		System.out.println("I love classical music");
+		System.out.println("I love jolly ranchers too");
+
+	}
+
+}
+```
+
+---
+
+- **The `System.out.println()` method outputs messages to the terminal in a new line.**
+- **Java code runs one line at a time, from top to bottom.**
+- **Comments are created using two backslashes `//`.**
+
+---
+
+# **The eight primitive types: ✰ - important**
+
+- **✰ `boolean` 1bit (true or false)**
+    
+    ### [**##](https://www.codedex.io/java/07-id-card#boolean) boolean**
+    
+    **Booleans are a data type that stores a true or false value. In Java, a boolean is either `true` or `false`, all lowercase.**
+    
+    ```java
+    boolean favColorBlue = true;
+    boolean subscribed = false;
+    
+    ```
+    
+- **✰ Integer values: `byte`, `short`, `int`, and `long` 4bit memory**
+    
+    ### [**##](https://www.codedex.io/java/07-id-card#integer) integer**
+    
+    **An integer is a whole number with no decimal points, including 0! This can include both negative and positive numbers.**
+    
+    ```java
+    int age = 19;
+    int cookies = 0;  // Did we finish a cookie pie? 🥧
+    
+    ```
+    
+- **`float`**
+- ✰ double 8 bytes
+    
+    ### [**##](https://www.codedex.io/java/07-id-card#double) double**
+    
+    **A double is a high-precision decimal number, meaning it can represent numbers with a large number of digits both before and after the decimal point!**
+    
+    **It is commonly used for storing values that require fractional precision, such as measurements, and scientific calculations.**
+    
+    ```java
+    double pi = 3.14;
+    double megapixels = 34.674423;
+    
+    ```
+    
+- **✰ `char` 2 bytes**
+    
+    ### [**##](https://www.codedex.io/java/07-id-card#char) char**
+    
+    **Java has the character data type to store a single character value, which can only be stored in single quotes.**
+    
+    ```java
+    char theFirstLetter = 'a';
+    char hashtag = '#';
+    
+    ```
+    
+- ✰String (reference data type, therefore starts with a capital letter)
+    
+    ### [**##](https://www.codedex.io/java/07-id-card#strings) strings**
+    
+    **A string is a sequence of characters or text. Strings are technically what we call a reference type. They do not store actual data but rather a reference (memory address) to the data. Strings are held in double quotes. But don't worry, for now, we'll use it very similarly to the rest of the data types we've learned about.**
+    
+    ```java
+    String wordleWord = "TAKER";
+    String artist = "Sabrina Carpenter";
+    
+    ```
+    
+
+---
+
+## **Switching Variables**
+
+```java
+package main;
+
+public class Main {
+
+	public static void main(String[] args) {
+		String x = "water";
+		String y = "kool-aid";
+		String temp;
+
+		temp = x;
+		x=y;
+		y = temp;
+
+		System.out.println("x: "+x);
+		System.out.println("y: "+y);
+
+	}
+
+}
+```
+
+---
+
+# Naming & Variables
+
+When naming variables Java uses camelCase.. that means that the first word is written in lower case followed by the other word which starts with an uppercase 
+
+e.g.
+
+int groupOfStudents = 20;
+int numberOfStudents = 10;
+
+Variable Names Rules to follow:
+
+- **They are case-sensitive (`Age` and `age` are different variables).**
+- **They cannot contain whitespaces or special characters like !, #, %, etc.**
+- **They must begin with a letter; it can't start with a number.**
+
+- **The Living Room box has 15 items.**
+- **The Master Bedroom box has 45 items.**
+- **The Bathroom has 10 items.**
+
+---
+
+# Operation 0
+
+mathematical operations with code:
+
+- **`+` Addition**
+- **Subtraction**
+- **Multiplication**
+- **`/` Division**
+- **`%` Modulo (returns the remainder)**
+
+> Reminder .. double = decimals, int = whole numbers
+> 
+- coding question on operations
+    
+    **You're a scientist at a lab mixing chemicals. We have the formula that we need to cause a chemical reaction:**
+    
+    ![](https://i.imgur.com/ZVE4n2d.gif)
+    
+    reactionResult=A+BAB*reactionResult*=*AB/A*+*B*
+    
+    **What is the result of the reaction? Create `chemicalA` and `chemicalB` variables, each holding a random amount of grams.**
+    
+    **Calculate and print the result. 🧪**
+    
+    ```java
+    public class HelloWorld {
+        public static void main(String[] args) {
+            // reactionResult = A+B / AB
+            double chemicalA = 50.3;
+            double chemicalB = 2.4;
+    
+            double reactionResult = (chemicalA + chemicalB) / (chemicalA * chemicalB);
+    
+            System.out.println (reactionResult);
+        }
+    }
+    ```
+    
+
+---
+
+# Scanner
+
+In Java a use of a scanner helps collect information about the user and create a much more fun and interactive program.
+
+- example of a scanner
+    
+    ```java
+    import java.util.Scanner;
+    
+    public class Greetings {
+        public static void main(String[] args) {
+    
+            Scanner scanner = new Scanner(System.in);
+    
+            System.out.print("Enter your name: ");
+            String name = scanner.nextLine();
+    
+            System.out.println(name);
+        }
+    }
+    ```
+    
+    [**##](https://www.codedex.io/java/09-escape-room#how-it-works) How it works**
+    
+    **the scanner is imported first before the main method** 
+    
+    “import java.util.Scanner;” tells java that we need to use a scanner
+    
+    Scanner scanner = new Scanner(System.in); reads input from the user
+    
+    String name = scanner nextLine(); method to read strings, there are other method to read different strings with different data types such as:
+    
+    - **`scanner.nextDouble()`**
+    - **`scanner.nextBoolean()`**
+    - **`scanner.nextInt()`**
+- coding question
+    
+    **We have the following escape room clue we need to solve!**
+    
+    > I speak without a mouth and hear without ears. I have no body, but I come alive with the wind. What am I?
+    > 
+    
+    **Use the scanner to create a program that asks the user for their answer to the riddle. At the end, be sure to test it, and end the program with a congratulations phrase!**
+    
+    ```java
+    // Escape Room 🕵🏻‍♀️
+    // Codédex
+    
+    import java.util.Scanner;
+    public class HelloWorld {
+    public static void main(String[] args) {
+      Scanner scanner = new Scanner(System.in);
+    
+      System.out.println("I speak without a mouth and hear without ears. I have no body, but I come alive with the wind. What am I?");
+      System.out.println("What is the answer?");
+      String answer = scanner.nextLine();
+    
+      System.out.println("Congratulations!");
+      System.out.println("answer");
+    
+      }
+    }
+    ```
+    
+
+---
+
+# CHALLENGE - conversion calculator
+
+```java
+// conversion calculator
+// penguin can enter number of coins they have and
+// it will return how much money they have in USD 
+// 1 coin in Club Penguin is equal to $0.0045 USD.
+import java.util.Scanner;
+public class HelloWorld {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        double coinWorth = 0.0045;
+        System.out.println("How many coins would you like to convert?");
+        int coins = scanner.nextInt();
+        double money = coinWorth * coins;
+        System.out.println (money);
+    }
+}
+```
+
+---
+
+# If Statements
+
+keyword TRUE
+
+<aside>
+
+the if statement only runs IF only the code meets that specific condition stated in the if statement. (therefore if the condition is true, the if statement runs)
+
+</aside>
+
+- **If the condition evaluates to true, code in the `if` section is executed.**
+- **If the condition evaluates to false, code in the `if` section is skipped.**
+- example
+    
+    ```java
+    int score = 85;
+    
+    if (score > 65) {
+        System.out.println("You passed the test! 🎉");
+    }
+    ```
+    
+
+# Else Statements
+
+keyword FALSE
+
+the else statement runs if the “if” statement isn’t true 
+
+- example
+    
+    ```java
+    int spiceLevel = 1;
+    boolean isSpicy = spiceLevel > 3;
+    
+    if (isSpicy) {
+        System.out.println("Careful! This is spicy fried rice.");
+    } else {
+        System.out.println("Spice tolerance where?");
+    }
+    ```
+    
+- if and else statement coding question
+    
+    ```java
+    // The pet store wants to send you a coupon 
+    // if you're a cat owner! 🐈
+    
+    // Write a program with a isCatOwner variable
+    // either true or false. (boolean)
+    
+    // If true, print “20% off select cat items with code 
+    // MEOW2025”. Otherwise, print a generic 
+    //“Welcome to the Pets Pets Pets store!” message.
+    
+    // Click Run, and see your result!
+    
+    public class HelloWorld {
+        public static void main(String[] args) {
+            boolean isCatOwner = false;
+            if (isCatOwner){
+                System.out.println ("20% off select cat items with code MEOW2025”");
+            } else {
+                System.out.println ("Welcome to the Pets Pets Pets store!");
+            }
+        }
+    }
+    ```
+    
+
+---
+
+# Relational Operators
+
+compares values to determine their relationship
+
+examples: 
+
+- **`==` equal to**
+- **`!=` not equal to**
+- **`>` greater than**
+- **`<` less than**
+- **`>=` greater than or equal to**
+- **`<=` less than or equal to**
+
+**“else if”** statements can be added to if and else statements to make the program more complex
+
+- for example:
+    
+    ```java
+    int temp = 90
+    
+    if (temp < 40) {
+        System.out.println("It may be snowing! ❄️"); 
+    } else if (temp < 80) {
+        System.out.println("Enjoy the weather! 👌");
+    } else {
+        System.out.println("Okay... It is getting a little hot in here. 🔥"); 
+    }
+    ```
+    
+    this shows that IF the temp is greater than 40 it will go to the else if statement and if the else if statement is also false it will use the else statement
+    
+- coding question
+    
+    ```java
+    public class HelloWorld {
+        public static void main(String[] args) {
+            boolean isCatOwner = false;
+            boolean isDogOwner = false;
+    
+            if (isCatOwner) {
+                System.out.println ("Use the code MEOW for 20% off cat items.");
+            }
+            else if (isDogOwner){
+                System.out.println("Use the code WOOF for 20% off dog items.");
+            }
+            else {
+                System.out.println("Welcome to the pet store!");
+            }
+        }  
+    }     
+    // this will print "Welcome to the pet store"! as the user is not a cat
+    // or dog owner
+    ```
+    
+
+---
+
+# Logical Operators
+
+They **combine statements** to get a **true or false answer**
+
+examples:
+
+AND
+
+- **`&&` returns to True if both conditions are True and returns False if either condition is false (or both)**
+
+OR
+
+- **`||` returns true if at least one of the conditions are true and returns false if both conditions are false**
+- example code of and or
+    
+    ```java
+    
+    public class HelloWorld {
+        public static void main(String[] args) {
+        int speedLimit = 30; 
+        int drivingSpeed = 25;
+        boolean schoolZone = false; 
+    
+        if ( drivingSpeed < speedLimit && schoolZone) {
+        System.out.println("You are being a safe driver!"); 
+        } else if (drivingSpeed > speedLimit || schoolZone) {
+        System.out.println("Slow down!");
+        } else {
+        System.out.println("Careful driving!"); 
+        }   
+    }
+    }
+    
+    // therefore the if statement is false because "schoolZone" is false
+    // which makes the whole statement false
+    //so it returns to else if
+    // the driving speed is less than the speed limit and the school zone is 
+    // already false which makes the whole statement false
+    // therefore, it returns to the else statement
+    // output : Careful driving
+    ```
+    
+- coding question
+    
+    ```java
+    //Create a program that checks if you can ride the rollercoaster 
+    //if you weigh above 40 kg and are taller than 120 cm.
+    // If both conditions are met, print “Congrats! You can ride!” 🎢
+    // Otherwise, “Sorry, You can't ride today.” 😞
+    
+    public class HelloWorld {
+        public static void main(String[] args) {
+        int weight = 40; 
+        int height = 120;
+    
+        if (weight >= 40 && height >= 120) {
+            System.out.println("Congrats! You can ride!"); 
+        } else {
+            System.out.println("Sorry, You can't ride today."); 
+        }    
+    }
+    }
+    
+    // output : Congrats! You can ride!
+    ```
+    
+
+---
+
+# END OF CHAPTER CODING QUESTION USING BOOLEAN, INT, IF, ELSE IF AND ELSE
+
+```java
+public class HelloWorld {
+    public static void main(String[] args) {
+    boolean isLatte = true;
+    boolean isIced = true;
+    boolean withMatcha = false;
+
+    int itemsOrdered = 2;
+    int vanillaPumps = 4;
+
+    if (isLatte && isIced){
+        System.out.println ("espresso, milk, ice, syrup.");
+     }
+    else if (isLatte && withMatcha){
+        System.out.println ("matcha, oat milk, ice, vanilla.");
+    }
+    else if (isLatte){
+        System.out.println ("espresso, steamed milk.");
+    }
+    else {
+        System.out.println ("Select a drink to get started!");
+    }
+    if (itemsOrdered > 1){
+        System.out.println ("provide cup holder");
+    }
+    if (vanillaPumps >= 2){
+        System.out.println ("charge $1 extra");
+    }
+    }
+}
+
+// output = 
+// espresso, milk, ice, syrup.
+// provide cup holder
+// charge $1 extra
+
+```
+
+---
+
+# Loops
+
+Loops are beneficial as if you wanted to use the same instruction for the program to run, you wouldn’t need to keep typing it
+
+have the potential to run over and over again (**infinity loop**) 
+
+- example of why we need loops
+    
+    System.out.println("1");
+    System.out.println("2");
+    System.out.println("3");
+    
+    output:
+    
+    1
+    2
+    3
+    
+- example of a loop
+    
+    ```java
+    public class HelloWorld {
+        public static void main(String[] args) {
+            int num = 1; // create a number and start at 1
+    
+            while (num <= 5) { 
+                System.out.println(num);
+                num = num + 1; // tracking how often the loop will run
+     
+            }
+        }
+    }
+    
+    // output: 
+    // 1
+    // 2
+    // 3
+    // 4
+    // 5
+    // 6
+    // 7
+    // 8
+    // 9
+    // 10
+    // 11
+    // 12
+    // 13
+    // 14
+    // 15
+    // 16
+    // 17
+    // 18
+    // 19
+    // 20
+    
+    ```
+    
+
+# While Loops (most simple loop in java)
+
+“while” - while the condition is true the program will run
+
+- example used in coding
+    
+    ```java
+    int i = 0;          // Initialize the loop counter
+    
+    while (i <= 10) { // while the integer is less than or equal to 10
+                      // the program will run
+        System.out.println("Are we there yet?");
+        i = i + 1;   
+    }
+    ```
+    
+
+# String Concatenation
+
+string concatenation is combining variables with "+”
+
+- example used in coding
+    
+    ```java
+    int i = 1;
+    
+    while (i <= 5) {
+        System.out.println("The square of " + i + " is " + (i*i)); 
+        //                                  ↑   ↑        ↑
+        // should be used to combine all varibles
+        i = i + 1;
+    }
+    ```
+    
+- coding question
+    
+    ```java
+    // Let's create a chant that we can use to show our support for your favorite artist 
+    // or sports team! 📢
+    // Create a loop that displays 15 lines with the following format:
+    // Line 1: LET'S GO <TEAM>!
+    // Line 2: LET'S GO <TEAM>! 
+    // Line 3: LET'S GO <TEAM>!
+    public class HelloWorld {
+        public static void main(String[] args) {
+        int i = 0;
+    
+        while (i < 15) {
+        System.out.println("LET'S GO <TEAM>!"); 
+        i = i + 1;
+    }   
+    }
+    }
+    
+       
+    
+    ```
+    
+
+# Loop Iterator
+
+“i < number” is an iterator 
+
+it tells the loop how many times it should run
+
+```java
+int i = iterator; // i variable tells the program how many times it should run
+
+while (condition) { 
+    // Do something
+    // Update the i iterator variable
+}
+```
+
+# For Loops
+
+starts at 0
+
+repeats a code only a certain amount of times based on the conditions you set in the code
+
+- list of examples
+    - **Limiting password attempts to 3 tries.**
+    - **Counting up or down.**
+    - **Generating multiple rows in a table for a web page.**
+    - **Repeating an animation frame a fixed number of times.**
+- coding example 1
+    
+    ```java
+    for (let i = initialValue; condition; updateIterator) {
+        // Code here
+    }
+    
+    // let i = intialValue starts the loop, i is the iterator, initialValue 
+    // is where you start counting from
+    // condition = as long as the condition is true the loop runs
+    // updateIterator changes the iterator in the loop (but you can also ..
+    // add and subtract) for e.g. i++ (add 1 to i)
+    ```
+    
+- coding example 2
+    
+    ```java
+    int num = 1; // num so that the loop could add the number 1 and add 
+    // unto it each time
+    
+    for (int i = 0; i < 3; i++) {
+        System.out.println("This is iteration " + num);
+        num++;
+       //int i starts at 0
+    }
+    
+    //code starts at 0
+    // if the iterator is less than 3 the code will run
+    // which it is
+    // i++ adds one to iterator everytime
+    // output : 
+    // This is iteration 1 
+    // This is iteration 2 
+    // This is iteration 3
+    
+    ```
+    
+- coding question
+    
+    ```java
+    public class HelloWorld {
+        public static void main(String[] args) {
+            int num = 1;
+    
+        for (int i = 0; i < 50; i++) {
+        System.out.println("I will be great at programming");
+        num++;
+    }
+    }
+            
+    }
+    
+    ```
+    
+
+---
+
+# Breaks
+
+you can use a “break” to break a loop when the conditions are met
+
+therefore the loop wouldn’t go on forever (infinity loop).
+
+- example in coding
+    
+    ```java
+    for (int i = 1; i <= 5; i++) {
+        System.out.println("i = " + i);
+        if (i == 3) { 
+            break; // placed after the condition of "if i ==3 is met"
+                   // then it will stop the loop and print that the loop
+                   // has ended.
+        }
+    }
+    
+    System.out.println("Loop ended.");
+    
+    // output: 
+    // i = 1
+    // i = 2
+    // i = 3
+    // Loop ended.
+    ```
